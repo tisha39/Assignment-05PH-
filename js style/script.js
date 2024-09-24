@@ -1,5 +1,5 @@
 document.getElementById('container-btn').addEventListener('click',function(){
-    window.location.href = './home.html'
+    window.location.href = './blog.html'
 })
 
 function getInputFieldId(id){
@@ -15,7 +15,7 @@ document.getElementById('donate-btn1').addEventListener('click',function(){
     const value1 = getInputFieldId('collect-value1')
     if(value1 > 0 || !isNaN){
         const moneyReplace = parseFloat(document.getElementById('add-money-1').innerText);
-        value1.value = ''
+        value1.valueOf = ''
         const newBalance = moneyReplace + value1
         document.getElementById('add-money-1').innerText = newBalance
         mainBalance = mainBalance -value1
@@ -30,7 +30,7 @@ document.getElementById('donate-btn1').addEventListener('click',function(){
         document.getElementById('history-list').append(container)
         my_modal_1.showModal()
     }else{
-        alert("invalid Donation Amout")
+        alert("invalid Donation Amount")
     }
    
 })
@@ -54,7 +54,7 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
     document.getElementById('history-list').append(container)
     my_modal_2.showModal()
     }else{
-        alert("invalid Donation Amout")
+        alert("invalid Donation Amount")
     }
     
 })
@@ -77,7 +77,7 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
         document.getElementById('history-list').append(container)
         my_modal_3.showModal()
         }else{   
-            alert("invalid Donation Amout")  
+            alert("invalid Donation Amount")  
         }
         
    
